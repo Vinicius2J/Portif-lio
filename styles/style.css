@@ -10,11 +10,14 @@
 }
 
 body {
-    background-color: rgb(231, 231, 231);
+   /* background-color: rgb(231, 231, 231); */ 
+  background-color: #127369;
+  color: white;
 }
 
 header#cabeçario-principal {
-    background-color: white;
+    background-color: #275950;
+    color: white;
 
     width: 250px;
     height: 100vh;
