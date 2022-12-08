@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
 
-    overflow: hidden;
+   overflow-x: hidden;
 }
 
 body {
@@ -227,3 +227,140 @@ button {
 }
 
 /*Estilização do corpo da pagina principal finalizada*/
+
+@media screen and (max-width: 1048px) {
+  header#cabeçario-principal{
+    height: 40vh;
+    width: 100vw;
+  }
+
+  main#corpo-principal {
+    position: relative;
+    left: 15%;
+    
+    width: 100vw;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+@media screen and (max-width: 900px) {
+  
+  header#cabeçario-principal{
+    height: 40vh;
+    width: 100vw;
+  }
+
+  main#corpo-principal {
+    position: relative;
+    top: 0px;
+    left: 5%;
+  }
+
+}
+
+@media screen and (max-width: 807px) {
+  
+  header#cabeçario-principal{
+    height: 40vh;
+    width: 100vw;
+  }
+
+  main#corpo-principal {
+    position: relative;
+    top: 0px;
+    left: 0%;
+  }
+
+}
+
+@media screen and (max-width: 703px) {
+  
+  header#cabeçario-principal{
+    height: 40vh;
+    width: 100vw;
+  }
+
+  main#corpo-principal {
+    position: relative;
+    top: 0px;
+    left: 0%;
+
+    height: 110vw;
+  }
+
+}
+
+@media screen and (max-width: 612px) {
+
+  main#corpo-principal {
+    position: relative;
+    top: 0px;
+    left: 0%;
+
+    height: 150vw;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  main#corpo-principal {
+    font-size: 9pt;
+  }
+
+  main#corpo-principal {
+    position: relative;
+    top: 0px;
+    left: 0%;
+
+    height: 130vw;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  main#corpo-principal {
+    font-size: 9pt;
+  }
+
+  main#corpo-principal {
+    position: relative;
+    top: 0px;
+    left: 0%;
+
+    height: 160vw;
+  }
+}
+
+@media screen and (max-width: 387px) {
+  main#corpo-principal {
+    font-size: 9pt;
+  }
+
+  header#cabeçario-principal{
+    height: 40vh;
+    width: 100vw;
+  }
+
+  main#corpo-principal {
+    position: relative;
+    top: 0px;
+    left: 0%;
+
+    height: 200vw;
+  }
+}
+
+@media screen and (max-width: 352px) {
+  main#corpo-principal {
+    font-size: 9pt;
+  }
+
+  main#corpo-principal {
+    position: relative;
+    top: 0px;
+    left: 0%;
+
+    height: 260vw;
+  }
+}
