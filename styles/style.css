@@ -11,12 +11,12 @@
 
 body {
    /* background-color: rgb(231, 231, 231); */ 
-  background-color: #127369;
+  background-color: #0A3A40;
   color: white;
 }
 
 header#cabeçario-principal {
-    background-color: #275950;
+    background-color: #042326;
     color: white;
 
     width: 250px;
@@ -89,9 +89,7 @@ button {
 
     display: flex;
     justify-content: center;
-}
 
-#projetos {
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -120,88 +118,7 @@ button {
     top: 100px;
 }
 
-#imgs-projetos {
-    position: absolute;
-    top: 0;
-
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    background-color: black;
-}
-
-#todas-imgs-projetos {
-    background-color: red;
-    
-    width: 90vw;
-    height: 90vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#todas-imgs-projetos > button {
-    font-size: 5em;
-
-    position: relative;
-    top: 0vh;
-    left: -45%;
-}
-
-#img-cordel {
-    position: absolute;
-
-    width: 50vw;
-    height: 50vh;
-    background-color: blue;
-}
-
-#img-cordel > #cordel001 {
-    width: 800px;
-    height: 387px;
-}
-
-#img-cordel > #cordel002 {
-    display: none;
-    width: 800px;
-    height: 387px;
-}
-
-#img-cordel > #cordel003 {
-    display: none;
-    width: 800px;
-    height: 387px;
-}
-
-#img-cordel > #cordel004 {
-    display: none;
-    width: 800px;
-    height: 387px;
-}
-
-#img-cordel > #cordel005 {
-    display: none;
-    width: 800px;
-    height: 387px;
-}
-
-#img-cordel > #cordel006 {
-    display: none;
-    width: 800px;
-    height: 387px;
-}
-
-#todas-imgs-projetos > #avançar {
-    left: 80vh;
-    top: -13%;
-}
+  /*redes sociais*/
 
 #redes-sociais {
     position: absolute;
@@ -232,10 +149,13 @@ button {
 /*Estilização do corpo da pagina principal finalizada*/
 
 @media screen and (max-width: 1048px) {
+  
   header#cabeçario-principal{
-    height: 40vh;
+    height: 60vh;
     width: 100vw;
   }
+
+  /*header acima*/
 
   main#corpo-principal {
     position: relative;
@@ -249,12 +169,52 @@ button {
     justify-content: center;
   }
 
+  /*main acima*/
+  
+  #projetos {
+    left: 0%;
+    top: 40%;
+
+    width: 100vw;
+
+    overflow: hidden;
+    
+  }
+
+  #projetos > h1 {
+    left: 45%;
+  }
+
+  #projeto-android {
+    left: 5%;
+  }
+
+  #projeto-cordel {
+    left: 40%;
+  }
+
+  /*projetos acima*/
+
+  #redes-sociais {
+    position: absolute;
+    top: 40%;
+
+    left: 0%;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+}
+
 @media screen and (max-width: 900px) {
   
   header#cabeçario-principal{
-    height: 40vh;
+    height: 60vh;
     width: 100vw;
   }
+
+  /*header acima*/
 
   main#corpo-principal {
     position: relative;
@@ -262,14 +222,18 @@ button {
     left: 5%;
   }
 
+  /*main acima*/
+
 }
 
 @media screen and (max-width: 807px) {
   
   header#cabeçario-principal{
-    height: 40vh;
+    height: 60vh;
     width: 100vw;
   }
+
+  /*header acima*/
 
   main#corpo-principal {
     position: relative;
@@ -277,14 +241,24 @@ button {
     left: 0%;
   }
 
+  /*main acima*/
+
+  #projeto-android {
+    left: 2%;
+  }
+
+  /*proejtos acima*/
+
 }
 
 @media screen and (max-width: 703px) {
   
   header#cabeçario-principal{
-    height: 40vh;
+    height: 60vh;
     width: 100vw;
   }
+
+  /*header acima*/
 
   main#corpo-principal {
     position: relative;
@@ -294,10 +268,25 @@ button {
     height: 110vw;
   }
 
+  /*main acima*/
+
+  #projeto-cordel {
+    left: 50%;
+  }
+
+  /*projetos acima*/
+
 }
 
 @media screen and (max-width: 612px) {
 
+  header#cabeçario-principal{
+    height: 60vh;
+    width: 100vw;
+  }
+
+  /*header acima*/
+  
   main#corpo-principal {
     position: relative;
     top: 0px;
@@ -305,9 +294,32 @@ button {
 
     height: 150vw;
   }
+
+  /*main acima*/
+
+  #projeto-cordel {
+    left: 52%;
+  }
+
+  #projetos > h1 {
+    left: 40%;
+  }
+
+  /*projetos acima*/
 }
 
 @media screen and (max-width: 520px) {
+  header#cabeçario-principal{
+    height: 35vh;
+    width: 100vw;
+  }
+
+  header > h1 {
+    display: none;
+  }
+
+  /*header acima*/
+  
   main#corpo-principal {
     font-size: 9pt;
   }
@@ -319,9 +331,58 @@ button {
 
     height: 130vw;
   }
+
+  /*main acima*/
+
+  #projetos {
+    left: 0%;
+    top: 40%;
+
+    width: 100vw;
+    height: 110vh;
+
+    overflow: hidden;
+    
+  }
+
+  #projetos > h1 {
+    left: 38%;
+  }
+
+  #projeto-android {
+    left: 25%;
+  }
+
+  #projeto-cordel {
+    left: 25%;
+    top: 60%;
+  }
+
+  /*projetos acima*/
+
+  #redes-sociais {
+    position: absolute;
+    top: 15%;
+
+    left: 0%;
+
+    width: 100vw;
+    height: 100vh;
+}
 }
 
 @media screen and (max-width: 444px) {
+  header#cabeçario-principal{
+    height: 35vh;
+    width: 100vw;
+  }
+
+  header > h1 {
+    display: none;
+  }
+
+  /*header acima*/
+  
   main#corpo-principal {
     font-size: 9pt;
   }
@@ -331,11 +392,49 @@ button {
     top: 0px;
     left: 0%;
 
-    height: 160vw;
+    height: 165vw;
   }
+
+  /*main acima*/
+
+  #projetos > h1 {
+    left: 37%;
+    font-size: 15pt;
+  }
+
+  #projeto-android {
+    left: 28%;
+    
+    width: 180px;
+    height: 180px;
+  }
+
+  #projeto-cordel {
+    left: 28%;
+    top: 60%;
+
+    width: 180px;
+    height: 180px;
+  }
+
+  /*projetos acima*/
+
+  
+  
 }
 
 @media screen and (max-width: 387px) {
+  header#cabeçario-principal{
+    height: 70vh;
+    width: 100vw;
+  }
+
+  header > h1 {
+    display: none;
+  }
+
+  /*header acima*/
+  
   main#corpo-principal {
     font-size: 9pt;
   }
@@ -352,6 +451,8 @@ button {
 
     height: 200vw;
   }
+
+  /*main acima*/
 }
 
 @media screen and (max-width: 352px) {
@@ -366,4 +467,28 @@ button {
 
     height: 260vw;
   }
+
+  /*main acima*/
+
+  #projetos > h1 {
+    left: 37%;
+    font-size: 15pt;
+  }
+
+  #projeto-android {
+    left: 25%;
+    
+    width: 180px;
+    height: 180px;
+  }
+
+  #projeto-cordel {
+    left: 25%;
+    top: 60%;
+
+    width: 180px;
+    height: 180px;
+  }
+
+  /*projetos acima*/
 }
